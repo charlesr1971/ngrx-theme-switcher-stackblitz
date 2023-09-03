@@ -1,0 +1,256 @@
+.mat-card {
+    padding: 30px;
+}
+
+.mat-card.field-switcher-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.mat-card .mat-form-field {
+    height: 89px !important;
+}
+
+.mat-select-value-text {
+    text-transform: capitalize;
+}
+
+button {
+    background: none;
+    border: none;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.mat-option {
+    text-transform: capitalize;
+}
+
+.form-field-container .form-field-text {
+    width: auto;
+    background: none;
+}
+
+.form-field-container .mat-form-field {
+    width: 100%;
+}
+
+.form-button-container {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.form-button-container button {
+    width: 125px;
+}
+
+.guestbook-panel {
+    position: relative;
+    float: left;
+    width: 49%;
+    box-sizing: border-box;
+}
+
+.guestbook-panel-text {
+    height: 423px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.guestbook-panel:nth-last-of-type(2) {
+    float: right;
+}
+
+.guestbook-panel .mat-card .date {
+    width: 100%;
+    height: 19px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.25;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.guestbook-panel .mat-card .content {
+    height: 250px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+
+.guestbook-panel .mat-card .content span.space {
+    margin: 0px 10px;
+}
+
+.guestbook-panel .mat-card .name {
+    width: 75%;
+    height: 17px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.5;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.guestbook-panel .mat-card .mat-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.app-custom-text {
+    position: relative;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.app-custom-text i {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#app-custom-text-1 {
+    display: none;
+}
+
+.app-custom-text-2 {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.app-custom-text-2 span {
+    vertical-align: baseline;
+}
+
+.app-custom-text-2 span {
+    display: inline-block;
+    /* font-family: 'Shadows Into Light', cursive; */
+    opacity: 0;
+}
+
+
+/* media queries */
+
+/* tablets */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+}
+
+/* smart phones */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .form-field-container .form-field-text {
+        width: 100%;
+    }
+
+    .guestbook-panel {
+        float: none;
+        width: 100%;
+    }
+    
+    .guestbook-panel:nth-last-of-type(2) {
+        float: none;
+        margin-top: 20px;
+    }
+
+    .guestbook-panel-text {
+        height: 423px;
+        padding: 30px;
+    }
+
+    .guestbook-panel .mat-card .content {
+        height: 270px;
+    }
+
+    .guestbook-panel .mat-card .content span.space {
+        margin: 0px 5px;
+    }
+
+    .guestbook-panel .mat-card .mat-icon {
+        right: 30px;
+    }
+
+    .app-custom-text {
+        height: 270px;
+    }
+
+    .app-custom-text-2 {
+        height: 270px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 667px) {
+
+    .form-field-container .form-field-text {
+        width: 100%;
+    }
+
+    .guestbook-panel {
+        float: none;
+        width: 100%;
+    }
+    
+    .guestbook-panel:nth-last-of-type(2) {
+        float: none;
+        margin-top: 20px;
+    }
+
+    .guestbook-panel-text {
+        height: 423px;
+        padding: 30px;
+    }
+
+    .guestbook-panel .mat-card .content {
+        height: 270px;
+    }
+
+    .guestbook-panel .mat-card .content span.space {
+        margin: 0px 5px;
+    }
+
+    .guestbook-panel .mat-card .mat-icon {
+        right: 30px;
+    }
+
+    .app-custom-text {
+        height: 270px;
+    }
+
+    .app-custom-text-2 {
+        height: 270px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+  
+}

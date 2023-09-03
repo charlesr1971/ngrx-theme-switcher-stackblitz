@@ -1,0 +1,52 @@
+<mat-card style="margin-top: 20px;">
+
+    <div class="guestbook-panel">
+
+        <mat-card class="field-switcher-container">Guest Book</mat-card>
+
+        <form novalidate [formGroup]="guestbookForm">
+
+            <div class="form-field-container">
+                <div class="form-field-text">
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Name" value="" formControlName="guestbookTitleInput" maxlength="{{ maxTitleInputLength }}">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="form-field-container">
+                <div class="form-field-text">
+                    <mat-form-field class="example-full-width">
+                        <textarea matInput placeholder="Comment" value="" formControlName="guestbookContentInput" style="height:170px;resize:none;" maxlength="{{ maxContentInputLength }}"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="form-button-container">
+            <button mat-button mat-raised-button data-role="submit" (click)="createGuestbook($event,0)" color="primary">Submit</button>
+        </div>
+
+    </div>
+
+    <div class="guestbook-panel">
+        <mat-card class="guestbook-panel-text">
+            <div class="date">
+                {{ guestbookDate }}
+            </div>
+            <div id="guestbookContent" class="content guestbookContent">
+                <!-- <span id="guestbookContentSpan" class="guestbookContentSpan">
+                </span> -->
+                <div class="app-custom-text" appCustomText appCustomTextRotationMax="0" appCustomTextStrLength="100" appCustomText="{{ guestbookContent }}"></div>
+            </div>
+            <div class="name">
+                {{ guestbookName }}
+            </div>
+            <mat-icon (click)="resetCustomText($event)">refresh</mat-icon>
+        </mat-card>
+    </div>
+
+    <div style="clear:both;"></div>
+    
+</mat-card>

@@ -1,0 +1,21 @@
+
+<mat-card class="select">
+
+    <mat-card class="theme-switcher-container">Current Theme: {{colorNameTitle}}</mat-card>
+
+    <mat-form-field #themeSwitcherSelect appearance="fill">
+        <mat-label>Theme Switcher</mat-label>
+        <mat-select (selectionChange)="changeTheme($event)">
+            <mat-select-trigger>
+                <button>
+                    <mat-icon [ngStyle]="{'color': selectionPrimaryHex}">stop_circle</mat-icon>
+                </button>
+               {{selectionText}}
+             </mat-select-trigger>
+            <mat-option *ngFor="let theme of materialThemes; let i = index" [value]="theme.id">
+                <mat-icon [ngStyle]="{'color': theme.primaryHex}">stop_circle</mat-icon> {{theme.colorNameTitle}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+</mat-card>

@@ -1,0 +1,20 @@
+<mat-card class="select">
+
+    <mat-card class="mode-switcher-container">Current Mode: {{title}}</mat-card>
+
+    <mat-form-field #modeSwitcherSelect appearance="fill">
+        <mat-label>Mode Switcher</mat-label>
+        <mat-select (selectionChange)="changeMode($event)">
+            <mat-select-trigger>
+                <button>
+                    <mat-icon [ngStyle]="{'color': selectionId === 1 ? 'black' : 'white'}">stop_circle</mat-icon>
+                </button>
+               {{selectionTitle}}
+             </mat-select-trigger>
+            <mat-option *ngFor="let mode of materialModes; let i = index" [value]="mode.id">
+                <mat-icon [ngStyle]="{'color': mode.id == 1 ? 'black' : 'white'}">stop_circle</mat-icon> {{mode.title}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+</mat-card>

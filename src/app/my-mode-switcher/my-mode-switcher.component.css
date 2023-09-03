@@ -1,0 +1,72 @@
+.mat-card {
+    padding: 30px;
+}
+
+.mat-card.select {
+    float: right;
+    width: 49%;
+    box-sizing: border-box;
+}
+
+.mat-card.mode-switcher-container {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.mat-card .mat-form-field {
+    height: 89px !important;
+}
+
+.mat-select-value-text {
+    text-transform: capitalize;
+}
+
+button {
+    background: none;
+    border: none;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.mat-option {
+    text-transform: capitalize;
+}
+
+/* media queries */
+
+/* tablets */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+}
+
+/* smart phones */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .mat-card.select {
+        float: none;
+        width: auto;
+        margin-top: 20px;
+    }
+      
+
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 667px) {
+
+    .mat-card.select {
+        float: none;
+        width: auto;
+        margin-top: 20px;
+    }
+
+  
+}
